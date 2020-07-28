@@ -9,4 +9,8 @@ export class Attributes<T> {
     // override this.data with update properties
     Object.assign(this.data, update);
   }
+
+  getAll(): T {
+    return this.data;
+  }
 }
