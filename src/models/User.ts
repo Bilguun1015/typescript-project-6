@@ -1,6 +1,6 @@
 import { Eventing } from './Eventing';
 
-interface UserProps {
+export interface UserProps {
   // ? makes properties optional
   id?: number;
   name?: string;
