@@ -1,6 +1,7 @@
-import { User } from '../models/User';
-export abstract class View {
-  constructor(public parent: Element, public model: User) {
+import { Model } from '../models/Model';
+// T will have have all the same properties of K loaded into it
+export abstract class View<T extends Model<K>, K> {
+  constructor(public parent: Element, public model: T) {
     this.bindModel();
   }
 
